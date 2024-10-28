@@ -45,8 +45,22 @@ def variance(arrX:list)->float:
 covarianceFun finds the summation of (yi - avgY) * (xi - avgX) 
 from the arrays arrX and arrY respectively and returns it as a float value.
 '''
-def covariance(arrX, arrY):
-	print()
+def covariance(arrX:list, arrY:list)->float:
+	fSum = 0
+	fMeanX = meanFun(arrX)
+	fMeanY = meanFun(arrY)
+
+	if (len(arrX) != len(arrY)):
+		return -1
+	else:
+		nLen = len(arrX)
+
+	for nIndex in range(0, nLen):
+		fElementX = arrX[nIndex]
+		fElementY = arrY[nIndex]
+		fSum += (fElementX - fMeanX) * (fElementY - fMeanY)
+
+	return fSum
 
 
 '''
