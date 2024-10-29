@@ -47,8 +47,8 @@ from the arrays arrX and arrY respectively and returns it as a float value.
 '''
 def covariance(arrX:list, arrY:list)->float:
 	fSum = 0
-	fMeanX = meanFun(arrX)
-	fMeanY = meanFun(arrY)
+	fMeanX = mean(arrX)
+	fMeanY = mean(arrY)
 
 	if (len(arrX) != len(arrY)):
 		return -1
