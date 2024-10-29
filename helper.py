@@ -11,6 +11,40 @@ Define the following functions:
 '''
 
 '''
+* transpose(matrixA) finds the transpose of the argument matrix 
+* and returns it.
+'''
+def transpose(matrixA:list)->list:
+	if (matrixA == []):
+		return []
+
+	m:int = len(matrixA)
+	n:int = len(matrixA[0])
+
+	# Make Empty Transpose
+	transpose:list = [[0 for y in range(0,m)] for x in range(0,n)]
+
+	# Build Transpose Matrix
+	for i in range(0, m):
+		for j in range(0, n):
+			transpose[j][i] = matrixA[i][j]
+
+	# Testing
+	print(transpose)
+
+	return transpose
+
+'''
+Testing
+listA:list = [[1, 2],
+			  [3,4],
+			  [5,6]]
+transpose(listA)
+'''
+
+
+
+'''
 mean finds the mean/average value of a
 given list of floating point values and returns the average as a float.
 '''
