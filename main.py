@@ -5,9 +5,9 @@
 import helper
 
 if (__name__ == "__main__"):
-	
-	# Using methods from helper.py
-	#helper.printHello()
+	# Testing The Linear Regression Model
 
-	helper.multipleLinearRegression('cancer.csv')
+	# user input for values to test
+	strValues = str(input("Insert comma separated values: "))
+	helper.multipleLinearRegression('cancer.csv', strValues)
 
