@@ -1,8 +1,8 @@
-# Cancer-Cell-Linear-Regression
-Repository for a simple linear regression model with Python applied to a public cancer cell dataset.
+# Linear-Regression-Projects
+Repository for simple linear regression model with Python applied to public datasets.
 
 Data->
-Thanks to Adam Eubanks for the Dataset-> https://gist.github.com/adameubanks/35a6beea49e5b9ba62797e595a9626c0 
+Thanks to Adam Eubanks for this Dataset-> https://gist.github.com/adameubanks/35a6beea49e5b9ba62797e595a9626c0 
 
 Code Description->
 1. Simple Linear Regression Model.
