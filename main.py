@@ -7,4 +7,7 @@ import helper
 if (__name__ == "__main__"):
 	
 	# Using methods from helper.py
-	helper.printHello()
+	#helper.printHello()
+
+	helper.multipleLinearRegression('cancer.csv')
+
